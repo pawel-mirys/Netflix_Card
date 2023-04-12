@@ -1,0 +1,59 @@
+@import '/src/global-styles/style.scss';
+
+.show-preview-card {
+  @include flex(flex-start, center, column);
+  @include rounding24;
+  height: 607px;
+  width: 413px;
+  background-color: var(--color-primary-500);
+
+  &__cover {
+    margin-top: 4px;
+  }
+  &__content {
+    @include flex(center, flex-start, column);
+    width: 100%;
+    padding: 0 32px;
+    margin-top: 10px;
+  }
+  &__name-and-time {
+    @include flex(space-between, center, row);
+    width: 100%;
+    padding: 12px 0 24px 0;
+    border-bottom: 1px solid var(--color-primary-400);
+  }
+  &__time-container {
+    @include flex(center, center, row);
+  }
+  &__time-icon {
+    margin-right: 8px;
+  }
+  &__info {
+    @include flex(flex-start, center, row);
+    width: 100%;
+    gap: 8px;
+    margin: 32px 0 0 0;
+  }
+  &__info-avatar {
+    margin-right: 8px;
+  }
+
+  @media (max-width: 550px) {
+    height: 537px;
+    width: 343px;
+    &__content {
+      padding: 0 16px;
+      margin-top: 15px;
+    }
+    &__cover {
+      width: 329px;
+      height: 332px;
+    }
+    &__name-and-time {
+      padding: 10px 0 32px 0;
+    }
+    &__info {
+      margin: 24px 0 0 0;
+    }
+  }
+}

@@ -1,10 +1,12 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
-/// 
-/// 
+
+@import '/src/global-styles/style.scss';
 
 #home-page {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include flex(center, center, row);
+  background-color: var(--color-background);
+  height: 100vh;
 }
+
+
