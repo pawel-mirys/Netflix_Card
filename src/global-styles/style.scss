@@ -21,3 +21,9 @@ p {
   @include font-regural;
   margin: 0;
 }
+
+@media (max-width: 350px) {
+  p {
+    font-size: 12px ;
+  }
+}
